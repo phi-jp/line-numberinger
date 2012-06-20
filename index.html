@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset=UTF-8 />
+        <title>Line Numberinger</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="https://raw.github.com/phi1618/tmlib.js/0.1.2/build/tmlib.js"></script>
+        <script src="https://raw.github.com/phi1618/formobserver.tm.js/master/src/formobserver.tm.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Line Numberinger</h1>
+            <p>
+                行番号を付けるツール
+            </p>
+        </header>
+        <div id="contents">
+            <section>
+                <h2>INPUT</h2>
+                <p>
+                    Text Text Text Text.
+                </p>
+                <form name="mainForm">
+                    <p>
+                        <label>行番号 : <input id="line-num" type="number" value="0" /></label>
+                    </p>
+                    <p>
+                        <textarea id="src" cols="32" rows="24" class="tm-form-observer">
+tm.main(function() {
+    console.log("tmlib.js");
+});
+</textarea>
+                    </p>
+                </form>
+            </section>
+            <section>
+                <h2>OUTPUT</h2>
+                <p>
+                    Text Text Text Text.
+                </p>
+                <p>
+                    Text Text Text Text.
+                </p>
+                <textarea id="dst" cols="32" rows="24"></textarea>
+            </section>
+        </div>
+    </body>
+</html>
