@@ -46,6 +46,7 @@ var numbering = function() {
     
     var offset = Number(eLineNum.value);
     var delimiter = eDelimiter.value;
+    delimiter = delimiter.replace(/\\n/g, '\n').replace(/\\t/g, '\t');
     
     var lines = eSrc.value.split("\n");
     var destLines = [];
